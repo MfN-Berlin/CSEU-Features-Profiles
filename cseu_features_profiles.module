@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CSEU Profiles feature.
+ */
+
+include_once 'cseu_features_profiles.features.inc';
