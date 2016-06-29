@@ -111,6 +111,16 @@ function cseu_features_profiles_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
+    'entityconnect' => array(
+      'button' => array(
+        'unload_add_button' => 1,
+        'unload_edit_button' => 1,
+      ),
+      'icon' => array(
+        'show_add_icon' => 0,
+        'show_edit_icon' => 0,
+      ),
+    ),
     'entityconnect_show_add_icon' => 0,
     'entityconnect_show_edit_icon' => 0,
     'entityconnect_unload_add' => 1,
@@ -626,6 +636,16 @@ function cseu_features_profiles_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
+    'entityconnect' => array(
+      'button' => array(
+        'unload_add_button' => 1,
+        'unload_edit_button' => 1,
+      ),
+      'icon' => array(
+        'show_add_icon' => 0,
+        'show_edit_icon' => 0,
+      ),
+    ),
     'entityconnect_show_add_icon' => 0,
     'entityconnect_show_edit_icon' => 0,
     'entityconnect_unload_add' => 1,

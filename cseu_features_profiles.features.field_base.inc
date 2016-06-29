@@ -205,7 +205,7 @@ function cseu_features_profiles_field_default_field_bases() {
         'view' => array(
           'args' => array(),
           'display_name' => 'entityreference_wgs_labelled',
-          'view_name' => 'cseu_entityreference_wgs_labelled_view',
+          'view_name' => 'cseu_entityreference_wgs_label_descr_view',
         ),
       ),
       'profile2_private' => 0,
@@ -298,7 +298,7 @@ function cseu_features_profiles_field_default_field_bases() {
         'view' => array(
           'args' => array(),
           'display_name' => 'entityreference_tasks_labelled',
-          'view_name' => 'cseu_entityreference_tasks_labelled_view',
+          'view_name' => 'cseu_entityreference_tasks_label_descr_view',
         ),
       ),
       'profile2_private' => 0,
