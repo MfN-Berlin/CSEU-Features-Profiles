@@ -103,7 +103,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
-          'view_mode' => 'cseu_ds_view_mode_wgs',
+          'view_mode' => 'cseu_ds_view_mode_wgs_full',
         ),
         'type' => 'entityreference_entity_view',
         'weight' => 0,
@@ -628,7 +628,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
-          'view_mode' => 'cseu_ds_view_mode_tasks',
+          'view_mode' => 'cseu_ds_view_mode_tasks_full',
         ),
         'type' => 'entityreference_entity_view',
         'weight' => 0,
