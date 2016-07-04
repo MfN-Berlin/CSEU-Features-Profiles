@@ -11,6 +11,223 @@ function cseu_features_profiles_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
+  // 'profile2-cseu_profile_assignments-field_cseu_group_assigned'.
+  $field_instances['profile2-cseu_profile_assignments-field_cseu_group_assigned'] = array(
+    'bundle' => 'cseu_profile_assignments',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 0,
+          'view_mode' => 'cseu_ds_view_mode_wgs_full',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 1,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'entityconnect' => array(
+      'button' => array(
+        'unload_add_button' => 1,
+        'unload_edit_button' => 1,
+      ),
+      'icon' => array(
+        'show_add_icon' => 0,
+        'show_edit_icon' => 0,
+      ),
+    ),
+    'field_name' => 'field_cseu_group_assigned',
+    'label' => 'Woking Groups',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-cseu_profile_assignments-field_cseu_group_chair'.
+  $field_instances['profile2-cseu_profile_assignments-field_cseu_group_chair'] = array(
+    'bundle' => 'cseu_profile_assignments',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 0,
+          'view_mode' => 'cseu_ds_view_mode_wgs_full',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 2,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'entityconnect' => array(
+      'button' => array(
+        'unload_add_button' => 1,
+        'unload_edit_button' => 1,
+      ),
+      'icon' => array(
+        'show_add_icon' => 0,
+        'show_edit_icon' => 0,
+      ),
+    ),
+    'field_name' => 'field_cseu_group_chair',
+    'label' => 'Chair of Woking Group',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-cseu_profile_assignments-field_cseu_group_cochair'.
+  $field_instances['profile2-cseu_profile_assignments-field_cseu_group_cochair'] = array(
+    'bundle' => 'cseu_profile_assignments',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 0,
+          'view_mode' => 'cseu_ds_view_mode_wgs_full',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 3,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'entityconnect' => array(
+      'button' => array(
+        'unload_add_button' => 1,
+        'unload_edit_button' => 1,
+      ),
+      'icon' => array(
+        'show_add_icon' => 0,
+        'show_edit_icon' => 0,
+      ),
+    ),
+    'field_name' => 'field_cseu_group_cochair',
+    'label' => 'Co-Chair of Woking Group',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-cseu_profile_assignments-field_cseu_secondary_proposer'.
+  $field_instances['profile2-cseu_profile_assignments-field_cseu_secondary_proposer'] = array(
+    'bundle' => 'cseu_profile_assignments',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_cseu_secondary_proposer',
+    'label' => 'Status',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-cseu_profile_assignments-field_cseu_task_assigned'.
+  $field_instances['profile2-cseu_profile_assignments-field_cseu_task_assigned'] = array(
+    'bundle' => 'cseu_profile_assignments',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 0,
+          'view_mode' => 'cseu_ds_view_mode_tasks_full',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 4,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'entityconnect' => array(
+      'button' => array(
+        'unload_add_button' => 1,
+        'unload_edit_button' => 1,
+      ),
+      'icon' => array(
+        'show_add_icon' => 0,
+        'show_edit_icon' => 0,
+      ),
+    ),
+    'field_name' => 'field_cseu_task_assigned',
+    'label' => 'Tasks',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance:
   // 'profile2-cseu_profile_groups_interest-field_cseu_group_chair_interest'.
   $field_instances['profile2-cseu_profile_groups_interest-field_cseu_group_chair_interest'] = array(
     'bundle' => 'cseu_profile_groups_interest',
@@ -669,6 +886,8 @@ function cseu_features_profiles_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Area of Expertise');
+  t('Chair of Woking Group');
+  t('Co-Chair of Woking Group');
   t('Facebook');
   t('First Name');
   t('Gender');
@@ -678,11 +897,14 @@ function cseu_features_profiles_field_default_field_instances() {
   t('Last Name');
   t('Please select the Woking Groups you would like to become Chair of.');
   t('Please select the Woking Groups you would like to become Co-Chair of.');
+  t('Status');
+  t('Tasks');
   t('Tasks of Interest');
   t('Telephone');
   t('Title');
   t('Twitter');
   t('URL');
+  t('Woking Groups');
   t('Working Groups of Interest');
   t('Year of completion of PhD');
 

@@ -110,6 +110,76 @@ function cseu_features_profiles_field_default_field_bases() {
     'type' => 'list_text',
   );
 
+  // Exported field_base: 'field_cseu_group_assigned'.
+  $field_bases['field_cseu_group_assigned'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_cseu_group_assigned',
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'views',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'view' => array(
+          'args' => array(),
+          'display_name' => 'entityreference_wgs_labelled',
+          'view_name' => 'cseu_entityreference_wgs_labelled_view',
+        ),
+      ),
+      'profile2_private' => 0,
+      'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'field_cseu_group_chair'.
+  $field_bases['field_cseu_group_chair'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_cseu_group_chair',
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'views',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'view' => array(
+          'args' => array(),
+          'display_name' => 'entityreference_wgs_labelled',
+          'view_name' => 'cseu_entityreference_wgs_labelled_view',
+        ),
+      ),
+      'profile2_private' => 0,
+      'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
   // Exported field_base: 'field_cseu_group_chair_interest'.
   $field_bases['field_cseu_group_chair_interest'] = array(
     'active' => 1,
@@ -117,6 +187,41 @@ function cseu_features_profiles_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_cseu_group_chair_interest',
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'views',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'view' => array(
+          'args' => array(),
+          'display_name' => 'entityreference_wgs_labelled',
+          'view_name' => 'cseu_entityreference_wgs_labelled_view',
+        ),
+      ),
+      'profile2_private' => 0,
+      'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'field_cseu_group_cochair'.
+  $field_bases['field_cseu_group_cochair'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_cseu_group_cochair',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -230,18 +335,17 @@ function cseu_features_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
-      'handler' => 'base',
+      'handler' => 'views',
       'handler_settings' => array(
         'behaviors' => array(
           'views-select-list' => array(
             'status' => 0,
           ),
         ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'cseu_institution' => 'cseu_institution',
+        'view' => array(
+          'args' => array(),
+          'display_name' => 'entityreference_intitution_department',
+          'view_name' => 'cseu_entityreference_institution_department_view',
         ),
       ),
       'profile2_private' => 0,
@@ -271,6 +375,66 @@ function cseu_features_profiles_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_cseu_secondary_proposer'.
+  $field_bases['field_cseu_secondary_proposer'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_cseu_secondary_proposer',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        1 => 'Secondary Proposer',
+      ),
+      'allowed_values_function' => '',
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_cseu_task_assigned'.
+  $field_bases['field_cseu_task_assigned'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_cseu_task_assigned',
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'views',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'view' => array(
+          'args' => array(),
+          'display_name' => 'entityreference_tasks_labelled',
+          'view_name' => 'cseu_entityreference_tasks_labelled_view',
+        ),
+      ),
+      'profile2_private' => 0,
+      'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_cseu_tasks_interest'.

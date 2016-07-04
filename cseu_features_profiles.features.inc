@@ -21,6 +21,15 @@ function cseu_features_profiles_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function cseu_features_profiles_default_profile2_type() {
   $items = array();
+  $items['cseu_profile_assignments'] = entity_import('profile2_type', '{
+    "userCategory" : true,
+    "userView" : true,
+    "type" : "cseu_profile_assignments",
+    "label" : "Assignments",
+    "weight" : "3",
+    "data" : { "registration" : 0 },
+    "rdf_mapping" : []
+  }');
   $items['cseu_profile_groups_interest'] = entity_import('profile2_type', '{
     "userCategory" : true,
     "userView" : true,
