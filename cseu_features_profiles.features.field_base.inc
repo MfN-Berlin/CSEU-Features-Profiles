@@ -393,6 +393,8 @@ function cseu_features_profiles_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
+        2 => 'Management Committee',
+        3 => 'Management Committee Substitute',
         1 => 'Secondary Proposer',
       ),
       'allowed_values_function' => '',
