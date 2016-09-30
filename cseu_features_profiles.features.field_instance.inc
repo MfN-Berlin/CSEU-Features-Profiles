@@ -228,86 +228,6 @@ function cseu_features_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-cseu_profile_groups_interest-field_cseu_group_chair_interest'.
-  $field_instances['profile2-cseu_profile_groups_interest-field_cseu_group_chair_interest'] = array(
-    'bundle' => 'cseu_profile_groups_interest',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Please select the Woking Groups you would like to become Chair of.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'links' => 0,
-          'view_mode' => 'cseu_ds_view_mode_wgs',
-        ),
-        'type' => 'entityreference_entity_view',
-        'weight' => 1,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'profile2',
-    'entityconnect_show_add_icon' => 0,
-    'entityconnect_show_edit_icon' => 0,
-    'entityconnect_unload_add' => 1,
-    'entityconnect_unload_edit' => 1,
-    'field_name' => 'field_cseu_group_chair_interest',
-    'label' => 'Interest in being appointed Chair of Woking Group',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-cseu_profile_groups_interest-field_cseu_group_cochair_interes'.
-  $field_instances['profile2-cseu_profile_groups_interest-field_cseu_group_cochair_interes'] = array(
-    'bundle' => 'cseu_profile_groups_interest',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Please select the Woking Groups you would like to become Co-Chair of.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'links' => 0,
-          'view_mode' => 'cseu_ds_view_mode_wgs',
-        ),
-        'type' => 'entityreference_entity_view',
-        'weight' => 2,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'profile2',
-    'entityconnect_show_add_icon' => 0,
-    'entityconnect_show_edit_icon' => 0,
-    'entityconnect_unload_add' => 1,
-    'entityconnect_unload_edit' => 1,
-    'field_name' => 'field_cseu_group_cochair_interes',
-    'label' => 'Interest in being appointed Co-Chair of Woking Group',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance:
   // 'profile2-cseu_profile_groups_interest-field_cseu_groups_interest'.
   $field_instances['profile2-cseu_profile_groups_interest-field_cseu_groups_interest'] = array(
     'bundle' => 'cseu_profile_groups_interest',
@@ -892,11 +812,7 @@ function cseu_features_profiles_field_default_field_instances() {
   t('First Name');
   t('Gender');
   t('Institution');
-  t('Interest in being appointed Chair of Woking Group');
-  t('Interest in being appointed Co-Chair of Woking Group');
   t('Last Name');
-  t('Please select the Woking Groups you would like to become Chair of.');
-  t('Please select the Woking Groups you would like to become Co-Chair of.');
   t('Status');
   t('Tasks');
   t('Tasks of Interest');

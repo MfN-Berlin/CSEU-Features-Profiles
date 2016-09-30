@@ -180,41 +180,6 @@ function cseu_features_profiles_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_cseu_group_chair_interest'.
-  $field_bases['field_cseu_group_chair_interest'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_cseu_group_chair_interest',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'views',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'view' => array(
-          'args' => array(),
-          'display_name' => 'entityreference_wgs_labelled',
-          'view_name' => 'cseu_entityreference_wgs_labelled_view',
-        ),
-      ),
-      'profile2_private' => 0,
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
   // Exported field_base: 'field_cseu_group_cochair'.
   $field_bases['field_cseu_group_cochair'] = array(
     'active' => 1,
@@ -222,41 +187,6 @@ function cseu_features_profiles_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_cseu_group_cochair',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'views',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'view' => array(
-          'args' => array(),
-          'display_name' => 'entityreference_wgs_labelled',
-          'view_name' => 'cseu_entityreference_wgs_labelled_view',
-        ),
-      ),
-      'profile2_private' => 0,
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
-  // Exported field_base: 'field_cseu_group_cochair_interes'.
-  $field_bases['field_cseu_group_cochair_interes'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_cseu_group_cochair_interes',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
