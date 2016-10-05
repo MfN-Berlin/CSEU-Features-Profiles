@@ -37,9 +37,9 @@ function cseu_features_profiles_default_profile2_type() {
     "userCategory" : true,
     "userView" : true,
     "type" : "cseu_profile_groups_interest",
-    "label" : "Working Groups of Interest",
+    "label" : "Working Groups",
     "weight" : "1",
-    "data" : { "registration" : 0, "use_page" : 0 },
+    "data" : { "registration" : 0 },
     "rdf_mapping" : []
   }');
   $items['cseu_profile_personal'] = entity_import('profile2_type', '{
@@ -55,9 +55,9 @@ function cseu_features_profiles_default_profile2_type() {
     "userCategory" : true,
     "userView" : true,
     "type" : "cseu_profile_tasks_interest",
-    "label" : "Tasks of Interest",
+    "label" : "Tasks",
     "weight" : "2",
-    "data" : { "registration" : 0, "use_page" : 0 },
+    "data" : { "registration" : 0 },
     "rdf_mapping" : []
   }');
   return $items;

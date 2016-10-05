@@ -110,41 +110,6 @@ function cseu_features_profiles_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_cseu_group_assigned'.
-  $field_bases['field_cseu_group_assigned'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_cseu_group_assigned',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'views',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'view' => array(
-          'args' => array(),
-          'display_name' => 'entityreference_wgs_labelled',
-          'view_name' => 'cseu_entityreference_wgs_labelled_view',
-        ),
-      ),
-      'profile2_private' => 0,
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
   // Exported field_base: 'field_cseu_group_chair'.
   $field_bases['field_cseu_group_chair'] = array(
     'active' => 1,
@@ -307,6 +272,48 @@ function cseu_features_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_cseu_markup_task_hint'.
+  $field_bases['field_cseu_markup_task_hint'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_cseu_markup_task_hint',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'markup',
+    'settings' => array(
+      'markup' => array(
+        'format' => 'plain_text',
+        'value' => 'Please select your task(s).',
+      ),
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'markup',
+  );
+
+  // Exported field_base: 'field_cseu_markup_wg_hint'.
+  $field_bases['field_cseu_markup_wg_hint'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_cseu_markup_wg_hint',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'markup',
+    'settings' => array(
+      'markup' => array(
+        'format' => 'plain_text',
+        'value' => 'Please select your working group(s). ',
+      ),
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'markup',
+  );
+
   // Exported field_base: 'field_cseu_secondary_proposer'.
   $field_bases['field_cseu_secondary_proposer'] = array(
     'active' => 1,
@@ -332,41 +339,6 @@ function cseu_features_profiles_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_text',
-  );
-
-  // Exported field_base: 'field_cseu_task_assigned'.
-  $field_bases['field_cseu_task_assigned'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_cseu_task_assigned',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'views',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'view' => array(
-          'args' => array(),
-          'display_name' => 'entityreference_tasks_labelled',
-          'view_name' => 'cseu_entityreference_tasks_labelled_view',
-        ),
-      ),
-      'profile2_private' => 0,
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_cseu_tasks_interest'.
