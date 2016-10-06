@@ -108,7 +108,7 @@ function cseu_features_profiles_field_default_field_instances() {
     'bundle' => 'cseu_profile_assignments',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => '(Status = Member Role)',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -777,6 +777,7 @@ function cseu_features_profiles_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('(Status = Member Role)');
   t('Area of Expertise');
   t('Chair of Woking Group');
   t('Co-Chair of Woking Group');
