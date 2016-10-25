@@ -257,7 +257,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -348,7 +348,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 3,
     ),
   );
 
@@ -383,7 +383,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 5,
     ),
   );
 
@@ -393,7 +393,7 @@ function cseu_features_profiles_field_default_field_instances() {
     'bundle' => 'cseu_profile_personal',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => '<p>You can choose an existing Institution from the list or <a href="/node/add/cseu-institution">create a new one first</a>.</p>',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -410,7 +410,7 @@ function cseu_features_profiles_field_default_field_instances() {
     'entity_type' => 'profile2',
     'entityconnect' => array(
       'button' => array(
-        'unload_add_button' => 0,
+        'unload_add_button' => 1,
         'unload_edit_button' => 1,
       ),
       'icon' => array(
@@ -431,7 +431,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -469,7 +469,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 4,
     ),
   );
 
@@ -513,7 +513,7 @@ function cseu_features_profiles_field_default_field_instances() {
     'bundle' => 'cseu_profile_personal',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'E.g.: Prof. Dr., Dr.',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -541,7 +541,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 0,
+      'weight' => 2,
     ),
   );
 
@@ -697,7 +697,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -786,9 +786,11 @@ function cseu_features_profiles_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('(Status = Member Role)');
+  t('<p>You can choose an existing Institution from the list or <a href="/node/add/cseu-institution">create a new one first</a>.</p>');
   t('Area of Expertise');
   t('Chair of Woking Group');
   t('Co-Chair of Woking Group');
+  t('E.g.: Prof. Dr., Dr.');
   t('Facebook');
   t('First Name');
   t('Gender');
