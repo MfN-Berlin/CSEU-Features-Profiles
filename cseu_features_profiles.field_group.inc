@@ -21,7 +21,7 @@ function cseu_features_profiles_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Contact Details',
-    'weight' => '6',
+    'weight' => '4',
     'children' => array(
       0 => 'field_cseu_telephone',
       1 => 'field_cseu_url',
