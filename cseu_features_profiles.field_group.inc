@@ -27,6 +27,7 @@ function cseu_features_profiles_field_group_info() {
       1 => 'field_cseu_url',
       2 => 'field_cseu_facebook',
       3 => 'field_cseu_twitter',
+      4 => 'field_cseu_public_email',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

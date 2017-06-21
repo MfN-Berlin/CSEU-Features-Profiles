@@ -310,7 +310,7 @@ function cseu_features_profiles_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 8,
+      'weight' => 13,
     ),
   );
 
@@ -327,7 +327,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -403,7 +403,7 @@ function cseu_features_profiles_field_default_field_instances() {
           'view_mode' => 'cseu_ds_view_mode_institution',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 4,
+        'weight' => 3,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -448,7 +448,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -474,6 +474,44 @@ function cseu_features_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'profile2-cseu_profile_personal-field_cseu_public_email'.
+  $field_instances['profile2-cseu_profile_personal-field_cseu_public_email'] = array(
+    'bundle' => 'cseu_profile_personal',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'This e-mail address will be made <b>public</b>.',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'invisimail',
+        'settings' => array(
+          'encoder' => 'js_entities',
+          'link' => 0,
+        ),
+        'type' => 'invisimail_html_entities',
+        'weight' => 5,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_cseu_public_email',
+    'label' => 'E-mail',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'email',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'email_textfield',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance:
   // 'profile2-cseu_profile_personal-field_cseu_telephone'.
   $field_instances['profile2-cseu_profile_personal-field_cseu_telephone'] = array(
     'bundle' => 'cseu_profile_personal',
@@ -486,7 +524,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_plain',
-        'weight' => 5,
+        'weight' => 4,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -504,7 +542,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'placeholder' => '',
       ),
       'type' => 'telephone_default',
-      'weight' => 7,
+      'weight' => 12,
     ),
   );
 
@@ -594,7 +632,7 @@ function cseu_features_profiles_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 9,
+      'weight' => 14,
     ),
   );
 
@@ -646,7 +684,7 @@ function cseu_features_profiles_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 6,
+      'weight' => 11,
     ),
   );
 
@@ -790,6 +828,7 @@ function cseu_features_profiles_field_default_field_instances() {
   t('Area of Expertise');
   t('Chair of Woking Group');
   t('Co-Chair of Woking Group');
+  t('E-mail');
   t('E.g.: Prof. Dr., Dr.');
   t('Facebook');
   t('First Name');
@@ -800,6 +839,7 @@ function cseu_features_profiles_field_default_field_instances() {
   t('Task Hint');
   t('Tasks');
   t('Telephone');
+  t('This e-mail address will be made <b>public</b>.');
   t('Title');
   t('Twitter');
   t('URL');
