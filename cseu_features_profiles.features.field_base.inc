@@ -349,6 +349,7 @@ function cseu_features_profiles_field_default_field_bases() {
       'allowed_values' => array(
         2 => 'Management Committee',
         3 => 'Management Committee Substitute',
+        8 => 'Management Commitee Observer',
         1 => 'Secondary Proposer',
         4 => 'STM Coordinator',
         5 => 'Early-Stage Researcher Representative',

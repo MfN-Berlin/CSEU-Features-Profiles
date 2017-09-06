@@ -23,6 +23,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'cseu_ds_view_mode_wgs_full',
         ),
         'type' => 'entityreference_entity_view',
@@ -71,6 +72,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'cseu_ds_view_mode_wgs_full',
         ),
         'type' => 'entityreference_entity_view',
@@ -152,6 +154,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'cseu_ds_view_mode_wgs_full',
         ),
         'type' => 'entityreference_entity_view',
@@ -400,6 +403,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'cseu_ds_view_mode_institution',
         ),
         'type' => 'entityreference_entity_view',
@@ -784,6 +788,7 @@ function cseu_features_profiles_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'cseu_ds_view_mode_tasks_full',
         ),
         'type' => 'entityreference_entity_view',
